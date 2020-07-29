@@ -77,6 +77,8 @@ pub mod async_std;
 pub mod async_tls;
 #[cfg(feature = "gio-runtime")]
 pub mod gio;
+#[cfg(feature = "gio-runtime")]
+pub mod gio_futures;
 #[cfg(feature = "tokio-runtime")]
 pub mod tokio;
 

@@ -29,6 +29,7 @@ features = ["async-std-runtime", "tokio-runtime", "gio-runtime", "async-tls", "a
 log = "0.4"
 futures-util = { version = "0.3", default-features = false, features = ["async-await", "sink", "std"] }
 futures-io = { version = "0.3", default-features = false, features = ["std"] }
+futures = "0.3"
 pin-project = "0.4"
 
 [dependencies.tungstenite]
@@ -118,6 +119,11 @@ required-features = ["async-std-runtime"]
 [[example]]
 name = "gio-echo"
 required-features = ["gio-runtime"]
+
+[[example]]
+name = "gio-server"
+required-features = ["gio-runtime"]
+
 
 [[example]]
 name = "tokio-echo"
